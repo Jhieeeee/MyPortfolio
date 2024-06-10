@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+:root{
+  --primary-white: #fff;
+  --primary-blue: #489cc0;
+}
+body{
+  font-family: "Roboto Condensed" sans-serif;
+}
+/**************** NAVBAR **************/
+.logo{
+  width: 100px;
+}
+/****************menu link*****************/
+nav a.nav-link{
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+nav ul li{
+  text-transform: uppercase;
+}
+.navbar-nav  > li > a{
+  font-size: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  color: rgb(49, 147, 233);
+}
+.navbar-brand{
+  padding: 0 !important;
+}
+.navbar-nav > li > :active, .navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-blue);
+  
+}
+.nav-link:hover, .navbar-nav > li > a:focus{
+  color: #25acbe !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(49, 147, 233)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
