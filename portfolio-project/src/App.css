@@ -36,12 +36,21 @@
     transform: rotate(360deg);
   }
 }
-:root{
+:root {
   --primary-white: #fff;
-  --primary-blue: #489cc0;
+  --primary-blue: #3498db;
+  --primary-bg: linear-gradient(45deg, #000000 0%, #092147 100%);
+  --navbar-bg: #333;
+  --navbar-link: #eee;
+  --navbar-hover: #3498db;
+  --header-text: #fff;
+  --button-primary: #2980b9;
+  --button-secondary: #2ecc71;
+  --button-text: #fff;
 }
-body{
-  font-family: "Roboto Condensed" sans-serif;
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
 }
 /**************** NAVBAR **************/
 .logo{
@@ -74,3 +83,55 @@ nav ul li{
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(49, 147, 233)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
+/* text-header */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.button-group .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-group .btn:hover {
+  background-color: #2980b9;
+}
+
+/* HEADER */
+.header-container {
+  position: relative;
+  background: url(bg.jpg);
+  background-size: cover;
+  background-position: center ;
+  height: 100vh;
+}
+.text-header {
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-white);
+  text-transform: uppercase;
+  
+}
+.Intro{
+  color: #3498db;
+}
+
+
+
