@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className='text-header'>
-        <h2 className='Intro'>Web Development and website promotions</h2>
+        <h2 className='Intro'>Web Development and Computer Repair Services</h2>
         <div>
-    <ReactTyped strings={[ "Web Design","Web Development","Facebook Ads","Google Ads"]} 
+    <ReactTyped strings={[ "Web Design","Web Development","PC Building","Computer Hardware Services", "Computer Software Services"]} 
         typeSpeed={40}
         backSpeed={50}
         loop />
