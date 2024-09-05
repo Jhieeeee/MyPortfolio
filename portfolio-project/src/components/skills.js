@@ -1,31 +1,40 @@
 import React from 'react';
 
+
 const Skills = () => {
   return (
-    <section id="skills" className="skills-section">
-      <div className="container">
-        <h2 className="section-title">Skills</h2>
-        <div className="skills-content">
-          <div className="skill-item">
-            <h3 className="skill-title">JavaScript</h3>
-            <p className="skill-description">Proficient in ES6+ features, asynchronous programming, and front-end frameworks.</p>
-          </div>
-          <div className="skill-item">
-            <h3 className="skill-title">Java</h3>
-            <p className="skill-description">Experienced with core Java, object-oriented programming, and enterprise-level applications.</p>
-          </div>
-          <div className="skill-item">
-            <h3 className="skill-title">React</h3>
-            <p className="skill-description">Skilled in building interactive UIs, component-based architecture, and state management.</p>
-          </div>
-          <div className="skill-item">
-            <h3 className="skill-title">CSS</h3>
-            <p className="skill-description">Strong understanding of layout techniques, responsive design, and modern CSS frameworks.</p>
-          </div>
+    <section className="skills-section">
+      <h2>My Skills</h2>
+      <div className="skills-container">
+        <div className="skills-column">
+          <h3>Coding skills</h3>
+          <Skill name="JavaScript" level="86%" />
+          <Skill name="PHP" level="80%" />
+          <Skill name="HTML + CSS" level="100%" />
+          <Skill name="Java" level="70%" />
+        </div>
+        <div className="skills-column">
+          <h3>Design Skills</h3>
+          <Skill name="UI / UX Design" level="92%" />
+          <Skill name="Web Design" level="99%" />
+          <Skill name="Logo Design" level="79%" />
         </div>
       </div>
     </section>
   );
-}
+};
+
+const Skill = ({ name, level }) => {
+  return (
+    <div className="skill">
+      <p>{name}</p>
+      <div className="progress-bar">
+        <div className="progress" style={{ width: level }}>
+          {level}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Skills;

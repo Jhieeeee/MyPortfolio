@@ -2,38 +2,56 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section className="about-me">
-      <div className="about-me-container">
-        <h2 className="about-me-title">About Me</h2>
-        <div className="about-me-content">
-          <img
-            src="your-image-url.jpg" // Replace with your actual image path
-            alt="Your Name"
-            className="about-me-image"
-          />
-          <div className="about-me-text">
-            <p>
-              Hi, I'm [Your Name], a passionate web developer with expertise in 
-              both front-end and back-end technologies. I love creating beautiful 
-              and functional websites that provide an exceptional user experience.
-            </p>
-            <p>
-              My journey started [X years/months ago] when I began learning 
-              programming. Since then, I have worked on numerous projects, honing 
-              my skills in HTML, CSS, JavaScript, React, Node.js, and more.
-            </p>
-            <p>
-              In my free time, I enjoy [your hobbies], and I'm always eager to 
-              learn new things and take on challenging projects.
-            </p>
-            <p>
-              If you'd like to connect or work together, feel free to reach out!
-            </p>
+    <div className="about-us">
+      <h2>ABOUT MY WORKS</h2>
+      <p className="goal">MY GOAL IS TO BUILD PRODUCTS AND SERVICES</p>
+
+      <div className="services">
+        <div className="service">
+          <div className="icon">
+            <i className="fas fa-laptop"></i>  {/* Icon for Web Design */}
           </div>
+          <h3>WEB DESIGN</h3>
+          <p>
+            Our approach to website design is to create a website that strengthens 
+            your company’s brand while ensuring ease of use and simplicity for your audience.
+          </p>
+        </div>
+
+        <div className="service">
+          <div className="icon">
+            <i className="fas fa-code"></i>  {/* Icon for Web Development */}
+          </div>
+          <h3>WEB DEVELOPMENT</h3>
+          <p>
+            The web development process involves taking graphical elements defined in 
+            the design process and coding them into a custom theme.
+          </p>
+        </div>
+
+        <div className="service">
+          <div className="icon">
+            <i className="fas fa-search"></i>  {/* Icon for SEO */}
+          </div>
+          <h3>SEO OPTIMIZATION</h3>
+          <p>
+            Go farther than you thought you could. With us, you can go farther than 
+            ever before. Be in top results of searches.
+          </p>
+        </div>
+
+        <div className="service">
+          <div className="icon">
+            <i className="fas fa-share-alt"></i>  {/* Icon for Social Media */}
+          </div>
+          <h3>SOCIAL MEDIA</h3>
+          <p>
+            It's important to keep your brand consistent and recognizable across all platforms.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
   );
-};
+}
 
 export default AboutMe;
